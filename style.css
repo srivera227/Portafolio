@@ -424,3 +424,32 @@ footer{text-align:center;padding:2.5rem;color:var(--muted)}
     font-size: 1rem;
   }
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .title h2,
+  #sobreMi .title h2 {
+    font-size: 2rem;
+  }
+
+  .photo-wrap {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-text,
+  .about-skills {
+    padding: 25px 20px;
+  }
+
+  .about-skills li {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
