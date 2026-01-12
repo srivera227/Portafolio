@@ -36,10 +36,10 @@ html {
   bottom:-10px;
   width:2px;
   height:2px;
-  background:#ffffff;
+  background:#0898f8;
   border-radius:50%;
   opacity:.6;
-  box-shadow:0 0 6px rgba(255,255,255,.6);
+  box-shadow:0 0 6px rgb(245, 243, 243);
   animation:
     floating-points linear infinite,
     starTwinkle ease-in-out infinite;
@@ -149,8 +149,16 @@ h1{
 .container{
   display: flex;
   gap: 5px;
+  
 }
 
+.descripcion {
+  height: 50px;
+}
+
+.botones {
+  margin-top: 20px;
+}
 .btn:hover {
   /*color: rgb(44, 8, 247);*/
   transform:translateY(-4px);
