@@ -148,7 +148,7 @@ h1{
 
 .container{
   display: flex;
-  gap: 5px;
+  gap: 2px;
   
 }
 
@@ -373,6 +373,10 @@ footer{text-align:center;padding:2.5rem;color:var(--muted)}
   .hero-text {
     max-width: 100%;
   }
+
+  .container{
+    width: 350px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -410,6 +414,10 @@ footer{text-align:center;padding:2.5rem;color:var(--muted)}
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+   .container{
+    width: 350px;
   }
 }
 
