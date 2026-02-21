@@ -177,6 +177,10 @@ section{
   background:linear-gradient(90deg,var(--blue-light),var(--blue));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
+
+.title img{
+  width: 400px;
+}
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.5rem}
 .card{
   background:var(--card);border-radius:18px;padding:2.4rem;
