@@ -7,8 +7,8 @@
 <title>Sebastián Rivera Mira | Backend Developer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -22,22 +22,22 @@
    
 </div>
 
+
 <!-- HERO -->
 <section class="hero">
-
   <div class="hero-content">
 
-    <div class="hero-image">
+    <div class="hero-image reveal">
       <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/350801481_1419474812210062_7457018659117974410_n.jpg" alt="Sebastián Rivera Mira">
     </div>
 
-    <div class="hero-text">
+    <div class="hero-text reveal">
       <h1>Sebastián Rivera Mira</h1>
-      <h2>Backend Developer | Automatización de procesos empresariales</h2>
+      <h2>Backend Developer | Automatización Empresarial</h2>
 
       <p>
-        Construyo sistemas con Django que reducen errores operativos,
-        automatizan validaciones complejas y optimizan procesos internos.
+        Diseño sistemas backend robustos con Django y PostgreSQL
+        enfocados en automatizar procesos críticos y reducir errores operativos.
       </p>
 
       <div class="hero-buttons">
@@ -47,130 +47,84 @@
     </div>
 
   </div>
-
-</section>
-
-<!-- SOBRE MI -->
-<section class="about">
-
-  <h2>Sobre mí</h2>
-
-  <p>
-    Soy desarrollador backend especializado en Django. 
-    Me enfoco en convertir procesos administrativos complejos 
-    en sistemas simples, eficientes y automatizados.
-  </p>
-
-  <p>
-    He trabajado en soluciones para la Fundación Universidad de Antioquia,
-    implementando validaciones de reglas laborales, módulos de aprobación
-    y automatización de reportes con integración a correo y WhatsApp.
-  </p>
-
-</section>
-
-<!-- STACK -->
-<section class="stack">
-
-  <h2>Stack Tecnológico</h2>
-
-  <div class="stack-grid">
-    <div>Python / Django</div>
-    <div>Django REST Framework</div>
-    <div>PostgreSQL</div>
-    <div>Java / Swing</div>
-    <div>JavaScript / AJAX</div>
-    <div>Integraciones API</div>
-  </div>
-
 </section>
 
 <!-- PROYECTOS -->
 <section id="proyectos" class="projects">
-
-
-
-  <div class="fundacion-logo">
-    <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/fundacion.png" alt="Fundación Universidad de Antioquia">
+  <div class="logoFundacion">
+    <img src="/images/fundacion.png" alt="">
   </div>
-
+  
   <div class="projects-grid">
 
-    <!-- Proyecto 1 -->
-    <div class="project-card">
-      <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/1.png" alt="Gestión de Turnos">
-
-      <h3>Automatización de Gestión de Turnos</h3>
-
-      <p>
-        Sistema que valida automáticamente reglas laborales
-        (descansos mínimos, compatibilidad de cargos, restricciones horarias)
-        antes de aprobar cambios de turno.
-      </p>
+    <div class="project-card reveal">
+      <div class="image-wrapper">
+        <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/1.png">
+      </div>
+      <h3>Gestión Inteligente de Turnos</h3>
+      <p>Sistema con validaciones automáticas de reglas laborales complejas.</p>
+      <button class="btn-small"
+        onclick="openModal(
+        'Gestión Inteligente de Turnos',
+        'Desarrollado con Django y PostgreSQL. Implementa validaciones de descansos mínimos, control de cargos equivalentes, revisión de turnos anteriores/posteriores y flujo de aprobación dinámico con confirmaciones seguras.')">
+        Ver más
+      </button>
     </div>
 
-    <!-- Proyecto 2 -->
-    <div class="project-card">
-      <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/3.png" alt="Sistema de Solicitudes">
-
+    <div class="project-card reveal">
+      <div class="image-wrapper">
+        <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/3.png">
+      </div>
       <h3>Sistema de Solicitudes Internas</h3>
-
-      <p>
-        Plataforma con filtros dinámicos, estados de aprobación,
-        notificaciones automáticas y control de historial de cambios.
-      </p>
+      <p>Flujo completo de aprobación con trazabilidad y filtros dinámicos.</p>
+      <button class="btn-small"
+        onclick="openModal(
+        'Sistema de Solicitudes Internas',
+        'Plataforma con estados automatizados, historial de cambios, validaciones backend y optimización de consultas en PostgreSQL.')">
+        Ver más
+      </button>
     </div>
 
-    <!-- Proyecto 3 -->
-    <div class="project-card">
-      <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/5.png" alt="Automatización Reportes">
-
-      <h3>Automatización de Reportes y Notificaciones</h3>
-
-      <p>
-        Generación automática de reportes en Excel,
-        envío de correos masivos y notificaciones por WhatsApp.
-      </p>
+    <div class="project-card reveal">
+      <div class="image-wrapper">
+        <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/5.png">
+      </div>
+      <h3>Automatización de Reportes</h3>
+      <p>Generación automática de reportes y notificaciones.</p>
+      <button class="btn-small"
+        onclick="openModal(
+        'Automatización de Reportes',
+        'Generación de archivos Excel automatizados, envío de correos masivos y notificaciones WhatsApp integradas vía API.')">
+        Ver más
+      </button>
     </div>
 
   </div>
-
-</section>
-
-<!-- COMO TRABAJO -->
-<section class="process">
-
-  <h2>Cómo trabajo</h2>
-
-  <div class="process-grid">
-    <div>1. Analizo el proceso actual</div>
-    <div>2. Identifico reglas y validaciones críticas</div>
-    <div>3. Diseño la lógica backend</div>
-    <div>4. Automatizo notificaciones y reportes</div>
-    <div>5. Optimizo y escalo el sistema</div>
-  </div>
-
 </section>
 
 <!-- CONTACTO -->
 <section id="contacto" class="contact">
-
-  <h2>¿Tienes un proceso que quieres automatizar?</h2>
-
-  <p>
-    Estoy disponible para colaborar en proyectos que requieran
-    lógica robusta, automatización y eficiencia operativa.
+  <h2 class="reveal">¿Quieres automatizar un proceso?</h2>
+  <p class="reveal">
+    Estoy disponible para proyectos que requieran lógica robusta,
+    arquitectura backend sólida y eficiencia operativa.
   </p>
-
-  <a href="mailto:tuemail@gmail.com" class="btn">
-    Hablemos
-  </a>
-
+  <a href="mailto:tuemail@gmail.com" class="btn reveal">Hablemos</a>
 </section>
 
 <footer>
-  © 2026 Sebastián Rivera Mira | Backend Developer
+  © 2026 Sebastián Rivera Mira
 </footer>
 
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

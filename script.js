@@ -1,23 +1,20 @@
-const buttons = document.querySelectorAll(".btn-modal");
-const modals = document.querySelectorAll(".modal");
-const closes = document.querySelectorAll(".close");
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalText = document.getElementById("modal-text");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    document.getElementById(button.dataset.modal).style.display = "flex";
-  });
-});
+function openModal(title, text){
+  modalTitle.innerText = title;
+  modalText.innerText = text;
+  modal.classList.add("active");
+}
 
-closes.forEach(close => {
-  close.addEventListener("click", () => {
-    close.closest(".modal").style.display = "none";
-  });
-});
+function closeModal(){
+  modal.classList.remove("active");
+}
 
-window.addEventListener("click", e => {
-  modals.forEach(modal => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
+/* Cerrar al hacer click fuera */
+modal.addEventListener("click", function(e){
+  if(e.target === modal){
+    closeModal();
+  }
 });
