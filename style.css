@@ -35,7 +35,7 @@ section{
   bottom:-10px;
   width:2px;
   height:2px;
-  background:#0898f8;
+  background:#5eafd4;
   border-radius:50%;
   opacity:.6;
   box-shadow:0 0 6px rgb(245, 243, 243);
@@ -99,6 +99,59 @@ section{
 .particles .point:nth-child(11){left:80%;animation-duration:25s;opacity:.5}
 .particles .point:nth-child(12){left:88%;animation-duration:22s}
 .particles .point:nth-child(13){left:95%;animation-duration:28s;opacity:.6}
+
+.stack {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stack img {
+    width: 30px;
+    transition: all 0.4s ease;
+    
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Efecto hover elegante */
+.stack img:hover {
+    transform: translateY(-8px) scale(1.15);
+    filter: grayscale(0%);
+}
+
+/* Glow individual por tecnología */
+.stack img:nth-child(1):hover {
+    filter: drop-shadow(0 0 10px #3776AB); /* Python */
+}
+
+.stack img:nth-child(2):hover {
+    filter: drop-shadow(0 0 10px #caa70c); /* Java */
+}
+
+.stack img:nth-child(3):hover {
+    filter: drop-shadow(0 0 10px #336791); /* PostgreSQL */
+}
+
+.stack img:nth-child(4):hover {
+    filter: drop-shadow(0 0 10px #dfd118); /* CSS */
+}
+
+.stack img:nth-child(5):hover {
+    filter: drop-shadow(0 0 10px #e34c26); /* HTML */
+}
+
+.stack img:nth-child(6):hover {
+    filter: drop-shadow(0 0 10px #264de4); /* CSS */
+}
+
+/* Animación flotante suave */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
 
 .hero{
   min-height:100vh;
