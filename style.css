@@ -135,7 +135,7 @@ section{
 }
 
 .stack img:nth-child(4):hover {
-    filter: drop-shadow(0 0 10px #dfd118); /* CSS */
+    filter: drop-shadow(0 0 10px #dfd118); /* Javascript */
 }
 
 .stack img:nth-child(5):hover {
