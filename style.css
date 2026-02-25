@@ -143,7 +143,7 @@ section{
 }
 
 .stack img:nth-child(6):hover {
-    filter: drop-shadow(0 0 10px #264de4); /* CSS */
+    filter: drop-shadow(0 0 10px #522cad); /* CSS */
 }
 
 /* Animación flotante suave */
@@ -285,50 +285,117 @@ footer{
   background:#020617;
 }
 
-/* MODAL OVERLAY */
-.modal{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.6);
-  backdrop-filter:blur(6px);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  opacity:0;
-  visibility:hidden;
-  transition:opacity 0.4s ease, visibility 0.4s ease;
-}
-
-/* CUANDO ESTA ACTIVO */
-.modal.active{
-  opacity:1;
-  visibility:visible;
+/* FONDO OSCURO */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 40px;
+  animation: fadeIn 0.3s ease;
 }
 
 /* CONTENIDO */
-.modal-content{
-  background:#1e293b;
-  padding:40px;
-  border-radius:20px;
-  max-width:500px;
-  width:90%;
-
-  transform:scale(0.8) translateY(30px);
-  opacity:0;
-  transition:all 0.4s cubic-bezier(.2,.8,.2,1);
+.modal-content {
+  background: rgba(255,255,255,0.05);
+  width: 100%;
+  max-width: 900px;     /* 🔥 Ahora es grande */
+  max-height: 90vh;     /* 🔥 Evita que se salga de pantalla */
+  overflow-y: auto;     /* 🔥 Scroll interno si es necesario */
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  animation: scaleIn 0.3s ease;
 }
 
-/* ANIMACION AL ACTIVARSE */
-.modal.active .modal-content{
-  transform:scale(1) translateY(0);
-  opacity:1;
+/* IMÁGENES DENTRO DEL MODAL */
+.modal-content img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 20px 0;
 }
 
-.close{
-  position:absolute;
-  top:15px;
-  right:20px;
-  cursor:pointer;
-  font-size:22px;
+/* BOTÓN CERRAR */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #aaa;
+  transition: 0.3s;
 }
+
+.close:hover {
+  color: #fff;
+  transform: rotate(90deg);
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+@keyframes scaleIn {
+  from {transform:scale(0.9); opacity:0}
+  to {transform:scale(1); opacity:1}
+}
+
+.modal-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.modal-gallery img {
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.modal-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.slider {
+  position: relative;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+.slider button {
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.slider button:hover {
+  background: rgba(0,0,0,0.9);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
