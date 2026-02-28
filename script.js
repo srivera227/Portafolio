@@ -45,7 +45,7 @@ function closeModal() {
 function openProject1() {
 
   const content = `
-    <h4>🧑‍💼 Módulo de Gestión de Empleados</h4>
+    <h4>Módulo de Gestión de Empleados</h4>
 
     <p>
     Este módulo centraliza toda la información personal y laboral de los empleados,
@@ -63,17 +63,6 @@ function openProject1() {
     <hr>
 
     <h4>📅 Módulo de Carga de Horarios y Sucesiones</h4>
-
-    <p>
-    Motor principal de planificación laboral con validaciones automáticas antes de publicación.
-    </p>
-
-    <ul>
-      <li>Validación de descansos mínimos</li>
-      <li>Prevención de solapamientos</li>
-      <li>Revisión de turnos anteriores/posteriores</li>
-      <li>Control de cargos equivalentes</li>
-      <li>Estado inicial: <strong>En Revisión</strong></li>
       <li>Publicación final tras validación</li>
     </ul>
 
