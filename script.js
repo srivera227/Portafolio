@@ -73,3 +73,33 @@ function openProject1() {
     ]
   );
 }
+
+function openProject2() {
+  const content = `
+    <h4></h4>
+    <hr>
+    <br>
+    <p>
+    La automatización del proceso de cambios de turnos consiste en que el sistema evalúe y apruebe o rechace las solicitudes de forma automática, basándose en reglas estrictas previamente definidas por la organización.
+    </p>
+    <br>
+    <ul>
+    <li>El sistema actúa como un actor dentro del proceso, encargado de analizar y determinar la validez de cada solicitud.</li>
+    <li>Garantía de trazabilidad en cada solicitud de cambio de turno.</li>
+    <li>Aplicación de validaciones estrictas sobre los cargos involucrados.</li>
+    <li>Gestión de excepciones de acuerdo con las políticas definidas por la organización.</li>
+    </ul>
+    <br>
+    <hr>
+  `;
+
+  openModal(
+    "Sistema Inteligente de Gestión de Turnos",
+    content,
+    [
+      "https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/4.png",
+      "https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/5.png",
+      "https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/6.png"
+    ]
+  );
+}
