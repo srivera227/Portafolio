@@ -43,39 +43,30 @@ function closeModal() {
 }
 
 function openProject1() {
-
   const content = `
-    <h4>Módulo de Gestión de Empleados</h4>
-
+    <h4></h4>
+    <hr>
+    <br>
     <p>
-    Este módulo centraliza toda la información personal y laboral de los empleados,
-    permitiendo consultas rápidas mediante código interno o número de identificación.
+    Sistema web para la gestión inteligente de turnos operativos en sistemas de transporte masivo mediante validación automática de reglas de negocio e integración con sistemas empresariales ERP
     </p>
-
+    <br>
     <ul>
-      <li>Búsqueda optimizada por código o documento</li>
-      <li>Visualización de información personal y contractual</li>
-      <li>Asignación y validación de cargo activo</li>
-      <li>Historial laboral estructurado</li>
+      <li>Lectura y cargue de los horarios laborales</li>
+      <li>Detección y notificación de errores</li>
+      <li>Sistema de precarga, permite la verificación de la información cargada antes de publicar</li>
+      <li>Sistema de actualización y control</li>
       <li>Control de acceso por roles</li>
     </ul>
-
+    <br>
     <hr>
-
-    <h4>📅 Módulo de Carga de Horarios y Sucesiones</h4>
-      <li>Publicación final tras validación</li>
-    </ul>
-
-    <p>
-    Solo turnos en estado <strong>Publicado</strong> son expuestos mediante
-    la API REST desarrollada en Django.
-    </p>
   `;
 
   openModal(
     "Sistema Inteligente de Gestión de Turnos",
     content,
     [
+      "https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/0.png",
       "https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/1.png",
       "https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/2.png",
       "https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/3.png"
