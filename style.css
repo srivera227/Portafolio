@@ -215,6 +215,8 @@ section{
 }
 
 .projects{
+  display: flex;
+  gap: 15px;
   background:#0f172a;
 }
 
