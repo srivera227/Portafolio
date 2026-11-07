@@ -1,204 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google" content="notranslate">
-  <link rel="icon" type="image/x-icon"
-    href="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/favicon.jpg">
-  <title>Sebastián Rivera Mira | Backend Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Portafolio de Sebastián Rivera Mira, Ingeniero de Sistemas y Backend Developer. Proyectos de automatización, desarrollo web y Business Intelligence.">
+  <meta name="theme-color" content="#090d16">
+  <title>Sebastián Rivera Mira | Ingeniero de Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
+  <input class="theme-toggle-input" type="checkbox" id="theme-toggle" aria-label="Cambiar entre tema oscuro y claro">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Ir al inicio"><span class="brand-mark">SR</span><span>sebastian<span class="brand-dot">.</span>dev</span></a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a><a href="#tecnologias">Tecnologías</a><a href="#sobre-mi">Sobre mí</a><a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <label class="theme-switch" for="theme-toggle" title="Cambiar tema"><span class="theme-icon">☼</span><span class="switch-track"><span class="switch-thumb"></span></span><span class="theme-label">Tema</span></label>
+        <a class="button button-small button-outline" href="https://github.com/srivera227" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </header>
 
-  <!-- FONDO DE PARTÍCULAS -->
-  <div class="particles">
-    <span class="point"></span><span class="point"></span><span class="point"></span>
-    <span class="point"></span><span class="point"></span><span class="point"></span>
-    <span class="point"></span><span class="point"></span><span class="point"></span>
-    <span class="point"></span><span class="point"></span><span class="point"></span>
-    <span class="point"></span>
+    <main>
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> DISPONIBLE PARA NUEVOS RETOS</div>
+          <p class="hero-kicker">INGENIERO DE SISTEMAS · BACKEND DEVELOPER</p>
+          <h1>Transformo procesos complejos en <span class="gradient-text">soluciones de software.</span></h1>
+          <p class="hero-description">Diseño y desarrollo aplicaciones web, automatizaciones y herramientas de análisis que convierten necesidades operativas en procesos más eficientes, medibles y confiables.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#proyectos">Explorar proyectos <span>↗</span></a><a class="button button-ghost" href="#contacto">Hablemos</a></div>
+          <div class="hero-meta"><span><b>01</b> Desarrollo backend</span><span><b>02</b> Automatización</span><span><b>03</b> Business Intelligence</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-glow"></div>
+          <div class="code-window">
+            <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>solution.py</span><span class="window-status">● running</span></div>
+            <div class="code-lines">
+              <p><span class="line-no">01</span><span class="code-purple">class</span> <span class="code-yellow">Solution</span>:</p>
+              <p><span class="line-no">02</span>  <span class="code-purple">def</span> <span class="code-blue">__init__</span>(self):</p>
+              <p><span class="line-no">03</span>    self.focus = [</p>
+              <p><span class="line-no">04</span>      <span class="code-green">"automation"</span>,</p>
+              <p><span class="line-no">05</span>      <span class="code-green">"backend"</span>,</p>
+              <p><span class="line-no">06</span>      <span class="code-green">"data & BI"</span></p>
+              <p><span class="line-no">07</span>    ]</p>
+              <p><span class="line-no">08</span>    self.build(value=True)<span class="cursor">_</span></p>
+            </div>
+            <div class="window-footer"><span>Python · Django</span><span>UTF-8</span></div>
+          </div>
+          <div class="floating-card floating-card-one"><span class="float-icon">⌘</span><div><strong>Procesos</strong><small>automatizados</small></div></div>
+          <div class="floating-card floating-card-two"><span class="float-icon float-icon-blue">▥</span><div><strong>Datos</strong><small>convertidos en valor</small></div></div>
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        </div>
+      </section>
 
+      <section class="quick-stats section-wrap">
+        <div class="stat-item"><strong>9.500<span>+</span></strong><span>Solicitudes gestionadas<br>en proyecto operativo</span></div>
+        <div class="stat-item"><strong>02</strong><span>Proyectos principales<br>en desarrollo</span></div>
+        <div class="stat-item"><strong>Full</strong><span>Ciclo de desarrollo<br>backend y despliegue</span></div>
+        <div class="stat-note"><span class="mini-spark">✳</span> Soluciones construidas a partir de problemas reales.</div>
+      </section>
+
+      <section class="section-wrap projects-section" id="proyectos">
+        <div class="section-heading"><div><p class="section-label">TRABAJO SELECCIONADO</p><h2>Proyectos que generan <span class="gradient-text">impacto.</span></h2></div><p class="section-intro">Aplicaciones enfocadas en resolver necesidades concretas mediante software, integración de datos y automatización.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <a class="project-image-link" href="proyectos/gestion-turnos.html" aria-label="Ver detalle de Gestión de Turnos">
+              <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/dashboard_general.png" alt="Imagen de prueba del sistema Gestión de Turnos">
+              <span class="image-tag">PROYECTO OPERATIVO</span><span class="image-open">↗</span>
+            </a>
+            <div class="project-content"><div class="project-topline"><span class="project-number">01 / AUTOMATIZACIÓN</span><span class="project-state"><i></i> Aplicación web</span></div>
+              <h3>Gestión de Turnos</h3><p class="project-summary">Sistema para administrar solicitudes y procesos operativos de personal de conducción, con validaciones, flujos de aprobación y trazabilidad.</p>
+              <div class="tag-list"><span>Django</span><span>Python</span><span>PostgreSQL</span><span>Azure</span></div>
+              <a class="text-link" href="proyectos/gestion-turnos.html">Explorar proyecto <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <a class="project-image-link" href="proyectos/analytix.html" aria-label="Ver detalle de Analytix">
+              <img src="assets/images/analytix/portada.svg" alt="Imagen de prueba del asistente Analytix">
+              <span class="image-tag">BUSINESS INTELLIGENCE</span><span class="image-open">↗</span>
+            </a>
+            <div class="project-content"><div class="project-topline"><span class="project-number">02 / INTELIGENCIA DE DATOS</span></div>
+              <h3>Analytix</h3><p class="project-summary">Agente de IA que interpreta solicitudes, consulta bases de datos mediante SQL y facilita la creación de dashboards.</p>
+              <div class="tag-list"><span>Django</span><span>PostgreSQL</span><span>Claude API</span><span>SQL</span></div>
+              <a class="text-link" href="proyectos/analytix.html">Explorar proyecto <span>↗</span></a>
+            </div>
+          </article>
+          <article class="project-card project-lab">
+            <div class="lab-visual"><span class="lab-orbit"></span><span class="lab-symbol">⌘</span><span class="lab-caption">EXPERIMENTACIÓN / LEARNING</span></div>
+            <div class="project-content"><div class="project-topline"><span class="project-number">03 / EXPLORACIÓN</span><span class="project-state">En evolución</span></div>
+              <h3>Laboratorio de soluciones</h3><p class="project-summary">Espacio para prototipos, integraciones y pruebas técnicas alrededor de APIs, automatización e infraestructura.</p>
+              <div class="tag-list"><span>Python</span><span>APIs</span><span>Integraciones</span></div>
+              <span class="text-link text-muted">Próximamente</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-wrap tech-section" id="tecnologias">
+        <div class="section-heading"><div><p class="section-label">HERRAMIENTAS</p><h2>Tecnologías con las que <span class="gradient-text">construyo.</span></h2></div><p class="section-intro">Un conjunto de herramientas para desarrollar, integrar, desplegar y mantener soluciones.</p></div>
+        <div class="tech-grid">
+          <article class="tech-card"><span class="tech-icon">Py</span><div><h3>Backend</h3><p>Python · Django · Django REST Framework</p></div></article>
+          <article class="tech-card"><span class="tech-icon tech-icon-blue">DB</span><div><h3>Bases de datos</h3><p>PostgreSQL · SQL · Modelado relacional</p></div></article>
+          <article class="tech-card"><span class="tech-icon tech-icon-orange">⌘</span><div><h3>Frontend</h3><p>HTML · CSS · JavaScript</p></div></article>
+          <article class="tech-card"><span class="tech-icon tech-icon-violet">☁</span><div><h3>Cloud & DevOps</h3><p>Microsoft Azure · Git · GitHub Actions</p></div></article>
+          <article class="tech-card"><span class="tech-icon tech-icon-green">AI</span><div><h3>IA aplicada</h3><p>Anthropic API · Integración de modelos</p></div></article>
+          <article class="tech-card"><span class="tech-icon tech-icon-pink">BI</span><div><h3>Datos & BI</h3><p>Consultas SQL · Dashboards · Automatización</p></div></article>
+        </div>
+      </section>
+
+      <section class="about-section section-wrap" id="sobre-mi">
+        <div class="about-mark"><span>SRM</span><i></i></div>
+        <div class="about-copy"><p class="section-label">UN POCO SOBRE MÍ</p><h2>Me interesa construir tecnología que <span class="gradient-text">resuelva.</span></h2><p>Soy Ingeniero de Sistemas y Tecnólogo en Desarrollo de Software. Me enfoco en el desarrollo backend, la automatización de procesos y la integración de datos. Disfruto entender cómo funciona una operación, identificar oportunidades de mejora y convertirlas en herramientas útiles para las personas y los equipos.</p><div class="about-points"><span>✓ Pensamiento analítico</span><span>✓ Orientación a soluciones</span><span>✓ Aprendizaje continuo</span></div></div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contacto">
+        <div class="contact-panel"><div><p class="section-label">¿TIENES UN PROYECTO EN MENTE?</p><h2>Construyamos algo <span class="gradient-text">útil.</span></h2><p>Estoy abierto a oportunidades laborales, colaboraciones y conversaciones sobre tecnología.</p></div><div class="contact-actions"><a class="button button-primary" href="mailto:TU_CORREO@EJEMPLO.COM">Escríbeme ↗</a><a class="button button-outline" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="button button-outline" href="https://github.com/srivera227" target="_blank" rel="noopener">GitHub ↗</a></div></div>
+      </section>
+    </main>
+    <footer class="site-footer section-wrap"><a class="brand" href="index.html"><span class="brand-mark">SR</span><span>sebastian<span class="brand-dot">.</span>dev</span></a><span>Diseñado y desarrollado por Sebastián Rivera Mira.</span><span>© 2026</span></footer>
   </div>
-
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-
-      <div class="hero-image reveal">
-        <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/fotoPerfil.jpeg"
-          alt="Sebastián Rivera Mira">
-      </div>
-
-      <div class="hero-text reveal">
-        <h1>Sebastián Rivera Mira</h1>
-        <h2>Backend Developer | Automatización Empresarial</h2>
-
-        <p>
-          Diseño sistemas backend robustos con Django y PostgreSQL
-          enfocados en automatizar procesos críticos y reducir errores operativos.
-        </p>
-
-        <div class="stack">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/250px-Python-logo-notext.svg.png"
-            alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/250px-Java_programming_language_logo.svg.png"
-            alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/960px-Postgresql_elephant.svg.png"
-            alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/330px-Unofficial_JavaScript_logo_2.svg.png"
-            alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png"
-            alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Official_CSS_Logo.svg/120px-Official_CSS_Logo.svg.png"
-            alt="">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/120px-Microsoft_Azure.svg.png"
-            alt="">
-        </div>
-
-        <div class="hero-buttons">
-          <a href="#proyectos" class="btn">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-outline">Hablemos</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="projects">
-    <div>
-      <div class="logoFundacion">
-        <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/fundacion.png" alt="">
-      </div>
-
-      <div class="projects-grid">
-        <div class="project-card reveal">
-          <div class="image-wrapper">
-            <img
-              src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/dashboard_general.png">
-          </div>
-          <h3>Sistema de Gestión de Turnos</h3>
-          <p>Automatización de procesos del Proyecto de Conducción de Trenes y Tranvía</p>
-          <button class="btn-small" onclick="openProject1()">
-            Ver más
-          </button>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="image-wrapper">
-            <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/4.png">
-          </div>
-          <h3>Automatización Cambios de Turnos</h3>
-          <p>Flujo completo de aprobación con trazabilidad y filtros dinámicos.</p>
-          <button class="btn-small" onclick="openProject2()">
-            Ver más
-          </button>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="image-wrapper">
-            <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/7.png">
-          </div>
-          <h3>Automatización de Procesos</h3>
-          <p>Generación automática de reportes y notificaciones.</p>
-          <button class="btn-small"
-            onclick="openModal(
-        'Automatización de Reportes',
-        'Generación de archivos Excel automatizados, envío de correos masivos y notificaciones WhatsApp integradas vía API.')">
-            Ver más
-          </button>
-        </div>
-
-      </div>
-    </div>
-
-    <div>
-      <div class="logoFundacion">
-        <img
-          src="https://raw.githubusercontent.com/srivera227/Portafolio/3109580ffb5d2c89e418d45ea850dec8afcb7ef6/images/logo_analytix.png"
-          alt="">
-      </div>
-
-      <div class="projects-grid">
-        <div class="project-card reveal">
-          <div class="image-wrapper">
-            <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/0.png">
-          </div>
-          <h3>Sistema de Gestión de Turnos</h3>
-          <p>Automatización de procesos del Proyecto de Conducción de Trenes y Tranvía</p>
-          <button class="btn-small" onclick="openProject1()">
-            Ver más
-          </button>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="image-wrapper">
-            <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/4.png">
-          </div>
-          <h3>Automatización Cambios de Turnos</h3>
-          <p>Flujo completo de aprobación con trazabilidad y filtros dinámicos.</p>
-          <button class="btn-small" onclick="openProject2()">
-            Ver más
-          </button>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="image-wrapper">
-            <img src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/7.png">
-          </div>
-          <h3>Automatización de Procesos</h3>
-          <p>Generación automática de reportes y notificaciones.</p>
-          <button class="btn-small"
-            onclick="openModal(
-        'Automatización de Reportes',
-        'Generación de archivos Excel automatizados, envío de correos masivos y notificaciones WhatsApp integradas vía API.')">
-            Ver más
-          </button>
-        </div>
-
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="contact">
-    <h2 class="reveal">¿Quieres automatizar un proceso?</h2>
-    <p class="reveal">
-      Estoy disponible para proyectos que requieran lógica robusta,
-      arquitectura backend sólida y eficiencia operativa.
-    </p>
-    <a href="sbastianpp@gmail.com" class="btn reveal">Hablemos</a>
-  </section>
-
-  <footer>
-    © 2026 Sebastián Rivera Mira
-  </footer>
-
-  <!-- MODAL -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h3 id="modal-title"></h3>
-      <p id="modal-text"></p>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
