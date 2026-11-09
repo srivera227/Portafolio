@@ -1,22 +1,300 @@
 <!DOCTYPE html>
-<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Sistema web desarrollado para apoyar la gestión operativa de personal de conducción de tren y tranvía, operadores y maniobristas. Centraliza solicitudes, aplica reglas de validación y facilita el seguimiento de cada caso."><title>Gestión de Turnos | Sebastián Rivera Mira</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/variables.css"><link rel="stylesheet" href="../css/main.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/responsive.css"></head>
-<body><input class="theme-toggle-input" type="checkbox" id="theme-toggle" aria-label="Cambiar entre tema oscuro y claro"><div class="site-shell">
-<header class="site-header"><a class="brand" href="../index.html"><span class="brand-mark">SR</span><span>sebastian<span class="brand-dot">.</span>dev</span></a><nav class="main-nav"><a href="../index.html#proyectos">Proyectos</a><a href="../index.html#tecnologias">Tecnologías</a><a href="../index.html#sobre-mi">Sobre mí</a><a href="../index.html#contacto">Contacto</a></nav><div class="header-actions"><label class="theme-switch" for="theme-toggle" title="Cambiar tema"><span class="theme-icon">☼</span><span class="switch-track"><span class="switch-thumb"></span></span><span class="theme-label">Tema</span></label><a class="button button-small button-outline" href="https://github.com/srivera227" target="_blank" rel="noopener">GitHub ↗</a></div></header>
-<main class="section-wrap"><section class="detail-hero"><div class="breadcrumbs"><a href="../index.html">Inicio</a> / <a href="../index.html#proyectos">Proyectos</a> / Gestión de Turnos</div><p class="detail-kicker">AUTOMATIZACIÓN DE PROCESOS · APLICACIÓN WEB</p><h1>Gestión de Turnos</h1><p class="detail-lead">Sistema web desarrollado para apoyar la gestión operativa de personal de conducción de tren y tranvía, operadores y maniobristas. Centraliza solicitudes, aplica reglas de validación y facilita el seguimiento de cada caso.</p><div class="detail-meta"><span>Python</span><span>Django</span><span>Django REST Framework</span><span>PostgreSQL</span><span>HTML / CSS / JavaScript</span><span>Azure App Service</span></div><div class="detail-cover"><img src="../assets/images/gestion-turnos/portada.svg" alt="Vista de referencia de Gestión de Turnos"></div><div class="placeholder-note">Mockups de demostración, no son capturas reales. Se recomienda sustituirlos por pantallas anonimizadas de la aplicación antes de publicar el portafolio.</div></section>
-<section class="detail-section"><h2>Funcionalidades principales</h2><p class="detail-section-intro">Componentes y capacidades implementadas para apoyar el flujo de trabajo de los usuarios.</p><div class="feature-grid"><article class="feature-card"><span class="feature-icon">⇄</span><h3>Solicitudes de cambio de turno</h3><p>Registro y gestión de solicitudes entre colaboradores, con validaciones sobre la información y las condiciones operativas.</p></article>
-<article class="feature-card"><span class="feature-icon">✓</span><h3>Flujos de aprobación</h3><p>Gestión de respuestas, aprobaciones y rechazos por parte de los responsables definidos.</p></article>
-<article class="feature-card"><span class="feature-icon">◷</span><h3>Permisos y vacaciones</h3><p>Centralización de solicitudes de permisos y vacaciones para su revisión y seguimiento.</p></article>
-<article class="feature-card"><span class="feature-icon">▤</span><h3>Trazabilidad e historial</h3><p>Consulta del estado y seguimiento de las solicitudes para facilitar el control operativo.</p></article>
-<article class="feature-card"><span class="feature-icon">▦</span><h3>Horarios y sucesiones</h3><p>Apoyo a la consulta de horarios y a procesos de sucesión sujetos a revisión y publicación.</p></article>
-<article class="feature-card"><span class="feature-icon">↻</span><h3>Integración de empleados</h3><p>Sincronización de información de empleados desde Odoo hacia PostgreSQL para usarla en los procesos del sistema.</p></article></div></section>
-<section class="detail-section"><h2>Procesos que se automatizan</h2><p class="detail-section-intro">El flujo general desde el registro de información hasta su validación y consulta.</p><div class="process-list"><article class="process-step"><h3>Registro de solicitud</h3><p>El colaborador registra el requerimiento desde la aplicación.</p></article>
-<article class="process-step"><h3>Validación automática</h3><p>El sistema verifica datos y reglas definidas para el tipo de solicitud.</p></article>
-<article class="process-step"><h3>Revisión y respuesta</h3><p>El responsable consulta el caso y registra una aprobación, rechazo o ajuste.</p></article>
-<article class="process-step"><h3>Seguimiento</h3><p>El estado y la información del proceso quedan disponibles para consulta.</p></article></div></section>
-<section class="detail-section"><h2>Galería del proyecto</h2><p class="detail-section-intro">Cada imagen puede reemplazarse por una captura real de la aplicación. Selecciona una imagen para abrirla en tamaño completo.</p><div class="gallery-grid"><figure class="gallery-item"><a href="../assets/images/gestion-turnos/solicitudes.svg" target="_blank" rel="noopener"><img src="../assets/images/gestion-turnos/solicitudes.svg" alt="Vista ilustrativa de solicitudes"></a><figcaption><h3>Gestión de solicitudes</h3><p>Ejemplo visual del listado y estado de solicitudes recibidas.</p></figcaption></figure>
-<figure class="gallery-item"><a href="../assets/images/gestion-turnos/aprobaciones.svg" target="_blank" rel="noopener"><img src="../assets/images/gestion-turnos/aprobaciones.svg" alt="Vista ilustrativa de aprobaciones"></a><figcaption><h3>Revisión y aprobación</h3><p>Ejemplo de una interfaz de revisión y respuesta a solicitudes.</p></figcaption></figure>
-<figure class="gallery-item"><a href="../assets/images/gestion-turnos/dashboard.svg" target="_blank" rel="noopener"><img src="../assets/images/gestion-turnos/dashboard.svg" alt="Vista ilustrativa del panel"></a><figcaption><h3>Panel operativo</h3><p>Ejemplo de indicadores y resumen de actividad del sistema.</p></figcaption></figure></div><p class="gallery-hint">Las imágenes actuales son ilustraciones SVG de prueba. Reemplázalas conservando los nombres de archivo o actualiza las rutas en este HTML.</p></section>
-<div class="detail-footer-actions"><a class="button button-primary" href="../index.html#contacto">Contactar ↗</a><a class="button button-outline" href="https://github.com/srivera227" target="_blank" rel="noopener">Ver GitHub ↗</a><a class="back-link" href="../index.html#proyectos">← Volver a proyectos</a></div></main>
-<footer class="site-footer section-wrap"><a class="brand" href="../index.html"><span class="brand-mark">SR</span><span>sebastian<span class="brand-dot">.</span>dev</span></a><span>Diseñado y desarrollado por Sebastián Rivera Mira.</span><span>© 2026</span></footer></div></body></html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sistema web desarrollado para apoyar la gestión operativa de personal de conducción de tren y tranvía, operadores y maniobristas. Centraliza solicitudes, aplica reglas de validación y facilita el seguimiento de cada caso.">
+    <title>Gestión de Turnos | Sebastián Rivera Mira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0,0">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body><input class="theme-toggle-input" type="checkbox" id="theme-toggle"
+        aria-label="Cambiar entre tema oscuro y claro">
+    <div class="site-shell">
+        <header class="site-header"><a class="brand" href="../index.html"><span
+                    class="brand-mark">SR</span><span>SRM<span class="brand-dot">.</span>Devs</span></a>
+            <nav class="main-nav"><a href="../index.html#proyectos">Proyectos</a><a
+                    href="../index.html#tecnologias">Tecnologías</a><a href="../index.html#sobre-mi">Sobre mí</a><a
+                    href="../index.html#contacto">Contacto</a></nav>
+            <div class="header-actions"><label class="theme-switch" for="theme-toggle" title="Cambiar tema"><span
+                        class="theme-icon">☼</span><span class="switch-track"><span
+                            class="switch-thumb"></span></span><span class="theme-label">Tema</span></label><a
+                    class="button button-small button-outline" href="https://github.com/srivera227" target="_blank"
+                    rel="noopener">GitHub ↗</a></div>
+        </header>
+        <main class="section-wrap">
+            <section class="detail-hero">
+                <div class="breadcrumbs"><a href="../index.html">Inicio</a> / <a
+                        href="../index.html#proyectos">Proyectos</a> / Gestión de Turnos</div>
+                <p class="detail-kicker">AUTOMATIZACIÓN DE PROCESOS · APLICACIÓN WEB</p>
+                <h1>Sistema de Gestión de Turnos GTR</h1>
+                <p class="detail-lead">Sistema web desarrollado para apoyar la gestión operativa de personal de
+                    conducción de trenes y tranvía, operadores de conducción y maniobristas. Centraliza solicitudes,
+                    aplica reglas de
+                    validación y facilita el seguimiento de cada caso.</p>
+                <div class="detail-meta"><span>Python</span><span>Django</span><span>Django REST
+                        Framework</span><span>PostgreSQL</span><span>API Rest</span> <span>HTML / CSS /
+                        JavaScript</span><span>Azure App
+                        Service</span></div>
+                <div class="detail-cover"><img
+                        src="https://raw.githubusercontent.com/srivera227/Portafolio/refs/heads/main/images/gt_conduccion/dashboard_general.png"
+                        alt="Vista de referencia de Gestión de Turnos"></div>
+                <div class="placeholder-note">Dashboard general, expone indicadores generales de las diferentes
+                    aplicaciones que contiene el proyecto</div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Funcionalidades principales</h2>
+                <p class="detail-section-intro">
+                    Componentes y capacidades implementadas para optimizar,
+                    automatizar y controlar los procesos operativos.
+                </p>
+
+                <div class="feature-grid">
+
+                    <!-- CAMBIOS DE TURNO -->
+                    <article class="feature-card feature-card-flow">
+
+                        <div class="feature-heading">
+                            <span class="feature-icon">⇄</span>
+                            <div>
+                                <h3>Solicitudes de cambio de turno</h3>
+                                <p>Flujo automatizado de solicitud, validación y aprobación entre empleados.</p>
+                            </div>
+                            <span class="flow-status">
+                                <span></span> Flujo automatizado
+                            </span>
+                        </div>
+
+                        <div class="shift-flow">
+
+                            <div class="flow-top-label">
+                                <span>PORTAL DE EMPLEADOS</span>
+                                <span>API REST SYNERGY</span>
+                                <span>SISTEMA GTR</span>
+                            </div>
+
+                            <div class="flow-track">
+
+                                <!-- 01. SOLICITUD -->
+                                <div class="flow-step step-1">
+                                    <div class="flow-node">
+                                        <span class="flow-number">01</span>
+                                        <span class="flow-symbol material-symbols-rounded">person</span>
+                                    </div>
+                                    <h4>Solicitud</h4>
+                                    <p>El empleado ingresa al portal y registra el cambio.</p>
+                                    <span class="flow-tag">Empleado solicitante</span>
+                                </div>
+
+                                <div class="flow-connector connector-1"></div>
+
+                                <!-- 02. HORARIO -->
+                                <div class="flow-step step-2">
+                                    <div class="flow-node">
+                                        <span class="flow-number">02</span>
+                                        <span class="flow-symbol material-symbols-rounded">schedule</span>
+                                    </div>
+                                    <h4>Horario permitido</h4>
+                                    <p>Se verifica que la solicitud esté dentro del período habilitado.</p>
+                                    <span class="flow-tag">Validación temporal</span>
+                                </div>
+
+                                <div class="flow-connector connector-2"></div>
+
+                                <!-- 03. CANDIDATOS -->
+                                <div class="flow-step step-3">
+                                    <div class="flow-node">
+                                        <span class="flow-number">03</span>
+                                        <span class="flow-symbol material-symbols-rounded">groups</span>
+                                    </div>
+                                    <h4>Candidatos</h4>
+                                    <p>Se muestran únicamente los empleados habilitados para el cambio.</p>
+                                    <span class="flow-tag">Compatibilidad</span>
+                                </div>
+
+                                <div class="flow-connector connector-3"></div>
+
+                                <!-- 04. REGLAS -->
+                                <div class="flow-step step-4">
+                                    <div class="flow-node">
+                                        <span class="flow-number">04</span>
+                                        <span class="flow-symbol material-symbols-rounded">fact_check</span>
+                                    </div>
+                                    <h4>Reglas operativas</h4>
+                                    <p>Se validan descansos mínimos y turnos anteriores y posteriores.</p>
+                                    <span class="flow-tag">Control de jornadas</span>
+                                </div>
+
+                                <div class="flow-connector connector-4"></div>
+
+                                <!-- 05. TRANSPORTE -->
+                                <div class="flow-step step-5">
+                                    <div class="flow-node">
+                                        <span class="flow-number">05</span>
+                                        <span class="flow-symbol material-symbols-rounded">directions_bus</span>
+                                    </div>
+                                    <h4>Transporte</h4>
+                                    <p>Se verifican las zonas de transporte y compromisos requeridos.</p>
+                                    <span class="flow-tag">Validación de zonas</span>
+                                </div>
+
+                                <div class="flow-connector connector-5"></div>
+
+                                <!-- 06. APROBACIÓN -->
+                                <div class="flow-step step-6">
+                                    <div class="flow-node">
+                                        <span class="flow-number">06</span>
+                                        <span class="flow-symbol material-symbols-rounded">approval</span>
+                                    </div>
+                                    <h4>Aprobación</h4>
+                                    <p>El empleado receptor revisa y aprueba la solicitud.</p>
+                                    <span class="flow-tag">Empleado receptor</span>
+                                </div>
+
+                                <div class="flow-connector connector-6"></div>
+
+                                <!-- 07. ACTUALIZACIÓN -->
+                                <div class="flow-step step-7">
+                                    <div class="flow-node">
+                                        <span class="flow-number">07</span>
+                                        <span class="flow-symbol material-symbols-rounded">sync_alt</span>
+                                    </div>
+                                    <h4>Actualización</h4>
+                                    <p>El sistema intercambia los turnos y confirma la operación.</p>
+                                    <span class="flow-tag">Cambio confirmado</span>
+                                </div>
+
+                            </div>
+
+                            <div class="flow-footer">
+                                <div class="flow-footer-info">
+                                    <span class="flow-live-dot"></span>
+                                    <span>Procesamiento y actualización en tiempo real</span>
+                                </div>
+                                <span class="flow-footer-tech">API REST · VALIDACIONES · AUTOMATIZACIÓN</span>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- OTRAS FUNCIONALIDADES -->
+                    <article class="feature-card">
+                        <span class="feature-icon">✓</span>
+                        <h3>Flujos de aprobación</h3>
+                        <p>Gestión de respuestas, aprobaciones y rechazos por parte de los responsables definidos.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">◷</span>
+                        <h3>Permisos y vacaciones</h3>
+                        <p>Centralización de solicitudes de permisos y vacaciones para su revisión y seguimiento.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">▤</span>
+                        <h3>Trazabilidad e historial</h3>
+                        <p>Consulta del estado y seguimiento de las solicitudes para facilitar el control operativo.</p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">▦</span>
+                        <h3>Horarios y sucesiones</h3>
+                        <p>Apoyo a la consulta de horarios y a procesos de sucesión sujetos a revisión y publicación.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">↻</span>
+                        <h3>Integración de empleados</h3>
+                        <p>Sincronización de información de empleados desde Odoo hacia PostgreSQL para usarla en los
+                            procesos del sistema.</p>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2>Procesos que se automatizan</h2>
+                <p class="detail-section-intro">El flujo general desde el registro de información hasta su validación y
+                    consulta.</p>
+                <div class="process-list">
+                    <article class="process-step">
+                        <h3>Registro de solicitud</h3>
+                        <p>El colaborador registra el requerimiento desde la aplicación.</p>
+                    </article>
+                    <article class="process-step">
+                        <h3>Validación automática</h3>
+                        <p>El sistema verifica datos y reglas definidas para el tipo de solicitud.</p>
+                    </article>
+                    <article class="process-step">
+                        <h3>Revisión y respuesta</h3>
+                        <p>El responsable consulta el caso y registra una aprobación, rechazo o ajuste.</p>
+                    </article>
+                    <article class="process-step">
+                        <h3>Seguimiento</h3>
+                        <p>El estado y la información del proceso quedan disponibles para consulta.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="detail-section">
+                <h2>Galería del proyecto</h2>
+                <p class="detail-section-intro">Cada imagen puede reemplazarse por una captura real de la aplicación.
+                    Selecciona una imagen para abrirla en tamaño completo.</p>
+                <div class="gallery-grid">
+                    <figure class="gallery-item"><a href="../assets/images/gestion-turnos/solicitudes.svg"
+                            target="_blank" rel="noopener"><img src="../assets/images/gestion-turnos/solicitudes.svg"
+                                alt="Vista ilustrativa de solicitudes"></a>
+                        <figcaption>
+                            <h3>Gestión de solicitudes</h3>
+                            <p>Ejemplo visual del listado y estado de solicitudes recibidas.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item"><a href="../assets/images/gestion-turnos/aprobaciones.svg"
+                            target="_blank" rel="noopener"><img src="../assets/images/gestion-turnos/aprobaciones.svg"
+                                alt="Vista ilustrativa de aprobaciones"></a>
+                        <figcaption>
+                            <h3>Revisión y aprobación</h3>
+                            <p>Ejemplo de una interfaz de revisión y respuesta a solicitudes.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item"><a href="../assets/images/gestion-turnos/dashboard.svg" target="_blank"
+                            rel="noopener"><img src="../assets/images/gestion-turnos/dashboard.svg"
+                                alt="Vista ilustrativa del panel"></a>
+                        <figcaption>
+                            <h3>Panel operativo</h3>
+                            <p>Ejemplo de indicadores y resumen de actividad del sistema.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <p class="gallery-hint">Las imágenes actuales son ilustraciones SVG de prueba. Reemplázalas conservando
+                    los nombres de archivo o actualiza las rutas en este HTML.</p>
+            </section>
+            <div class="detail-footer-actions"><a class="button button-primary" href="../index.html#contacto">Contactar
+                    ↗</a><a class="button button-outline" href="https://github.com/srivera227" target="_blank"
+                    rel="noopener">Ver GitHub ↗</a><a class="back-link" href="../index.html#proyectos">← Volver a
+                    proyectos</a></div>
+        </main>
+        <footer class="site-footer section-wrap"><a class="brand" href="../index.html"><span
+                    class="brand-mark">SR</span><span>sebastian<span
+                        class="brand-dot">.</span>dev</span></a><span>Diseñado y desarrollado por Sebastián Rivera
+                Mira.</span><span>© 2026</span></footer>
+    </div>
+</body>
+
+</html>
